@@ -1,0 +1,29 @@
+### START main ###
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.1.4.RELEASE)
+
+2019-04-14 23:01:59.680  INFO 908 --- [           main] com.example.demo.DemoApplication         : Starting DemoApplication on DESKTOP-S7E5EAQ with PID 908 (D:\work\workspace\demo\bin\main started by t-tak in D:\work\workspace\demo)
+2019-04-14 23:01:59.682  INFO 908 --- [           main] com.example.demo.DemoApplication         : No active profile set, falling back to default profiles: default
+### tasklet ###
+2019-04-14 23:02:00.168  WARN 908 --- [           main] o.s.b.c.c.a.DefaultBatchConfigurer       : No datasource was provided...using a Map based JobRepository
+2019-04-14 23:02:00.169  WARN 908 --- [           main] o.s.b.c.c.a.DefaultBatchConfigurer       : No transaction manager was provided, using a ResourcelessTransactionManager
+2019-04-14 23:02:00.177  INFO 908 --- [           main] o.s.b.c.l.support.SimpleJobLauncher      : No TaskExecutor has been set, defaulting to synchronous executor.
+### step1 ###
+### job ###
+### listener ###
+2019-04-14 23:02:00.324  INFO 908 --- [           main] com.example.demo.DemoApplication         : Started DemoApplication in 0.909 seconds (JVM running for 1.825)
+org.springframework.batch.core.launch.support.SimpleJobLauncher@46d8f407
+SimpleJob: [name=job]
+2019-04-14 23:02:00.361  INFO 908 --- [           main] o.s.b.c.l.support.SimpleJobLauncher      : Job: [SimpleJob: [name=job]] launched with the following parameters: [{time=1555250520327}]
+### ジョブ開始 ###
+2019-04-14 23:02:00.380  INFO 908 --- [           main] o.s.batch.core.job.SimpleStepHandler     : Executing step: [step1]
+### PersonTasklet#execute ###
+firstName: first, lastName: last
+### ジョブ終了 ###
+2019-04-14 23:02:00.401  INFO 908 --- [           main] o.s.b.c.l.support.SimpleJobLauncher      : Job: [SimpleJob: [name=job]] completed with the following parameters: [{time=1555250520327}] and the following status: [COMPLETED]
